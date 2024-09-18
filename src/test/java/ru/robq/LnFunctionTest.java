@@ -4,9 +4,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import ru.robq.functions.LnFunction;
 
+@ExtendWith(MockitoExtension.class)
 public class LnFunctionTest {
 
     private final LnFunction lnFunction = new LnFunction();

@@ -6,10 +6,13 @@ import static org.mockito.Mockito.verify;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import ru.robq.functions.CosFunction;
 import ru.robq.functions.Function;
 
+@ExtendWith(MockitoExtension.class)
 public class CosFunctionTest {
 
     private static Function mockSinFunction;

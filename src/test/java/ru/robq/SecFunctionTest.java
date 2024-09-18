@@ -9,10 +9,13 @@ import static org.mockito.Mockito.when;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import ru.robq.functions.Function;
 import ru.robq.functions.SecFunction;
 
+@ExtendWith(MockitoExtension.class)
 public class SecFunctionTest {
     private static Function mockCosFunction;
     private SecFunction secFunction;

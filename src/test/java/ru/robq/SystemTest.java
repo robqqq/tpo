@@ -8,10 +8,13 @@ import java.io.IOException;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import ru.robq.functions.Function;
 import ru.robq.functions.FunctionSystem;
 
+@ExtendWith(MockitoExtension.class)
 public class SystemTest {
     private static Function secFunction;
     private static Function cotFunction;
